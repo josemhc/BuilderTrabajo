@@ -8,7 +8,7 @@ package src.PatronBuilder;
  *
  * @author josem
  */
-public class Car implements Builder{
+public class Car{
     private int seats;
     private String engine;
     private boolean tripComputer;
@@ -30,9 +30,5 @@ public class Car implements Builder{
         this.GPS = true;
     }
 
-    @Override
-    public void reset() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
 }
 
