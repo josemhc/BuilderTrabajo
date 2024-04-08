@@ -11,20 +11,16 @@ import src.PatronBuilder.Car;
  *
  * @author josem
  */
-  public abstract class CarBuilder implements Builder {
+  public class CarBuilder implements Builder {
     private Car car;
 
     public CarBuilder() {
         this.reset();
     }
-
+    
+    @Override
     public void reset() {
-        this.car = new Car() {
-            @Override
-            public void reset() {
-                throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-            }
-        };
+        this.car = new Car();    
     }
 
     public void setSeats(int number) {

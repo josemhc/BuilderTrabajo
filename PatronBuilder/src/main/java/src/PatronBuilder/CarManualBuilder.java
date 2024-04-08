@@ -8,7 +8,7 @@ package src.PatronBuilder;
  *
  * @author josem
  */
-public class CarManualBuilder {
+public class CarManualBuilder implements Builder{
     private Manual manual;
 
     public CarManualBuilder() {
