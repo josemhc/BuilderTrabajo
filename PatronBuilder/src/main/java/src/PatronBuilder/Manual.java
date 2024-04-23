@@ -10,6 +10,17 @@ package src.PatronBuilder;
  */
 public class Manual {
     private int seats;
+
+    @Override
+    public String toString() {
+        return "Manual{" +
+                "seats=" + seats +
+                ", engine='" + engine + '\'' +
+                ", tripComputer=" + tripComputer +
+                ", GPS=" + GPS +
+                '}';
+    }
+
     private String engine;
     private boolean tripComputer;
     private boolean GPS;

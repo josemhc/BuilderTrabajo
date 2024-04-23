@@ -26,6 +26,9 @@ public class Main {
         CarManualBuilder carManualBuilder = new CarManualBuilder();
         director.makeSportsCar(carManualBuilder);
         Manual sportsCarManual = carManualBuilder.getResult();
+
+        System.out.println("El carro es: " + suv);
+        System.out.println("El Manual del carro es: " + sportsCarManual);
         // Utilizar el manual del Sports Car
     }
 }
